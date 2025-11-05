@@ -39,7 +39,7 @@ jobs:
 
       - name: Clone manifests repo
         run: |
-          git clone git@github.com:VitoriaAmelia/hello-manifests.git manifests
+          git clone git@github.com:VitoriaAmelia/hello-manifest.git manifests
         shell: bash
 
       - name: Update image in manifests and push

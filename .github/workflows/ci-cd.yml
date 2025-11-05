@@ -54,7 +54,7 @@ jobs:
             echo "⚪ Nenhuma mudança detectada no deployment.yaml — nada para enviar."
           else
             git commit -m "ci: update image to sha-${{ github.sha }}"
-            git push origin HEAD
+            git push git@github.com:VitoriaAmelia/hello-manifest.git HEAD:ci/update-image-${{ github.sha }}
             echo "✅ Atualização enviada para hello-manifests com sucesso."
           fi
         shell: bash

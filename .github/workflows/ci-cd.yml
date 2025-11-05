@@ -39,12 +39,17 @@ jobs:
 
       - name: Clone manifests repo
         run: |
-          git clone git@github.com:VitoriaAmelia/hello-manifest.git manifests
+          git clone git@github.com:VitoriaAmelia/hello-manifests.git manifests
         shell: bash
 
       - name: Update image in manifests and push
         run: |
           cd manifests/hello-app
+          # 🔧 Configura identidade do Git (evita erro de "Author identity unknown")
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Cria branch e faz commit da nova imagem
           git checkout -b ci/update-image-${{ github.sha }}
           sed -i "s#image: .*#image: ${{ secrets.DOCKER_USERNAME }}/hello-app:sha-${{ github.sha }}#g" deployment.yaml
           git add deployment.yaml

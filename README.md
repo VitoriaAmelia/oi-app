@@ -426,7 +426,7 @@ Acesse no navegador para ver:
 
 5. Verifique também os pods com `kubectl get pods` para ver se tudo está running:
    
-<img width="745" height="360" alt="image" src="https://github.com/user-attachments/assets/aaf26232-5e2a-4ad9-8804-a7f1db97d897" />
+<img width="722" height="246" alt="image" src="https://github.com/user-attachments/assets/7e823250-7a65-4376-9561-64b8bdf4b0da" />
 
 Obs: Você pode conseguir informações úteis sobre o funcionamento verificando os logs com `kubectl logs -l app=hello-app`
 

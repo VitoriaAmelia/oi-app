@@ -308,7 +308,7 @@ Arquivo **`pipeline.yaml`** com comentários:
 name: CI/CD
 
 on:
-  # Dispara automaticamente quando houver push na branch "main"
+  # Dispara quando houver push na branch main
   push:
     branches:
       - main
@@ -343,7 +343,7 @@ jobs:
           push: true                      # Envia a imagem para o Docker Hub
           tags: ${{ secrets.DOCKER_USERNAME }}/hello-app:sha-${{ github.sha }} # Nomeia a imagem com um código
 
-      # Configura o SSH para poder acessar o repositório hello--manifest
+      # Configura o SSH para poder acessar o repositório hello-manifest
       - name: Configurar SSH
         uses: webfactory/ssh-agent@v0.9.0
         with:
@@ -353,7 +353,7 @@ jobs:
       - name: Checkout do repositório de manifests
         uses: actions/checkout@v4
         with:
-          repository: VitoriaAmelia/hello-manifest  # Repositório de destino
+          repository: VitoriaAmelia/hello-manifest  
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}   # Usa a chave SSH para autenticar
           path: manifests                           # Clona dentro da pasta "manifests"
 

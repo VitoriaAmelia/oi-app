@@ -141,7 +141,7 @@ COPY . .
 # Porta que o container vai expor
 EXPOSE 80
 
-# Comando para rodar a aplicação
+# Comando para rodar a aplicação com host 0.0.0.0 e porta 80
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 

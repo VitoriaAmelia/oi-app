@@ -11,4 +11,4 @@ async def root():
 
 @app.get("/hello/{name}", tags=["Exemplo"])
 async def say_hello(name: str):
-    return {"message": f"Olá, {name}! Seja bem-vindo à API que deu certo."}
+    return {"message": f"Olá, {name}! Seja bem-vindo à API que deu certo!"}

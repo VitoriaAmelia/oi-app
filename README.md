@@ -344,7 +344,7 @@ spec:
     spec:
       containers:
         - name: hello-app    # Nome do container
-          image: amevis/hello-app:latest # Imagem Docker usada (será substiruida por uma nova)
+          image: amevis/hello-app:latest # Imagem Docker usada (será substituída por uma nova)
           ports:
             - containerPort: 80  # Porta exposta pelo container
 ```

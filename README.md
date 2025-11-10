@@ -388,7 +388,7 @@ Pressione **Enter** duas vezes.
 Depois, rode o comando para exibir a chave pública e guarde sua saída:
 
 ```bash
-Get-Content $env:USERPROFILE\.ssh\projeto_app.pub
+cat ~/.ssh/projeto_app.pub
 ```
 Saída esperada:
 

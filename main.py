@@ -54,7 +54,7 @@ async def root():
         </head>
         <body>
             <div class="container">
-                <h1>Parabéns!</h1>
+                <h1>Parabéns!!</h1>
                 <p>Sua API FastAPI deu certo!</p>
                 <a class="btn" href="/hello/Visitante">Diga Olá</a>
             </div>

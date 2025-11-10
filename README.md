@@ -554,21 +554,22 @@ Acesse no navegador para ver:
 
 <img width="427" height="369" alt="voltou a ficar sync" src="https://github.com/user-attachments/assets/7238983c-20e7-42b3-8abc-f0f77ddf3dcb" />
 
-
+ㅤ
    - A nova mensagem aparecerá em `http://localhost:30080/`:
-
-<img width="920" height="580" alt="image" src="https://github.com/user-attachments/assets/ebfb248b-1c14-4e13-8586-176cb7fd8a88" />
-
+ㅤ
+<img width="728" height="515" alt="image" src="https://github.com/user-attachments/assets/734f26fa-8da9-41fd-bdac-5d0dbac14603" />
+ㅤ
   - A nova mensagem também aparecerá em `http://localhost:30080/hello/seunome`:
-
-<img width="955" height="589" alt="image" src="https://github.com/user-attachments/assets/52051414-1c10-4189-a715-1742ba75aee5" />
-
-
+ㅤ
+<img width="782" height="526" alt="image" src="https://github.com/user-attachments/assets/f242e417-e5d6-428c-923c-cdbc3bdd71d0" />
 
 
+
+ㅤ
 5. Verifique também os pods com `kubectl get pods` para ver se tudo está running:
    
 <img width="722" height="246" alt="image" src="https://github.com/user-attachments/assets/7e823250-7a65-4376-9561-64b8bdf4b0da" />
+ㅤ
 
 Obs: Você pode conseguir informações úteis sobre o funcionamento verificando os logs com `kubectl logs -l app=hello-app`
 

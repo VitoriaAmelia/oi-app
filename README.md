@@ -211,7 +211,18 @@ spec:
 
 ### `service.yaml`
 ```yaml
-# código aqui
+apiVersion: v1
+kind: Service           # Cria o Service para expor a aplicação
+metadata:
+  name: hello-app
+spec:
+  type: NodePort        # Tipo de serviço: NodePort
+  selector:
+    app: hello-app
+  ports:
+    - port: 80          # Porta do Service dentro do cluster
+      targetPort: 80    # Porta do container
+      nodePort: 30080   # Porta para acesso à aplicação
 ```
 
 **Explicação:**

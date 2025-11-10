@@ -1,5 +1,11 @@
 # 🚀 Deploy Automatizado de Aplicação FastAPI com ArgoCD e GitHub Actions
 
+Projeto realizado no contexto do Programa de Bolsas. Este repositório tem relação com o repositório [hello-manifest](https://github.com/VitoriaAmelia/hello-manifest)
+
+## 📋 Objetivos
+
+O objetivo desse projeto é utomatizar o ciclo completo de desenvolvimento, build, deploy e execução de uma aplicação FastAPI simples, usando GitHub Actions para CI/CD, Docker Hub como registry, e ArgoCD para entrega contínua em Kubernetes local com Rancher Desktop. 
+
 ## 📋 Pré-requisitos
 
 Antes de começar, certifique-se de que possui os seguintes itens instalados e configurados:
@@ -11,7 +17,18 @@ Antes de começar, certifique-se de que possui os seguintes itens instalados e c
 - ⚙️ `kubectl` configurado corretamente  
 - 🚢 [ArgoCD](https://argo-cd.readthedocs.io/en/stable/getting_started/) instalado no cluster local  
 - 🧩 [Git](https://git-scm.com/downloads) instalado  
-- 🐍 [Python 3](https://www.python.org/downloads/) e [Docker](https://www.docker.com/products/docker-desktop/) instalados  
+- 🐍 [Python 3](https://www.python.org/downloads/) e [Docker](https://www.docker.com/products/docker-desktop/) instalados
+
+## 📋 Navegação
+
+1. Criando repositórios no GitHub
+2. Estruturando o projeto localmente
+3. Criando chaves SSH e adicionando segredos no GitHub
+4. Criando o GitHub Actions (CI/CD)
+5. Acessando o ArgoCD
+6. Criando App no ArgoCD
+7. Testes
+
 
 ---
 
@@ -485,7 +502,7 @@ Interface de login:
 
 ---
 
-## 🚀 6. Criar App no ArgoCD
+## 🚀 6. Criando App no ArgoCD
 
 No painel do ArgoCD:
 
@@ -512,7 +529,7 @@ Acesse no navegador para ver:
 
 ---
 
-## 🔁 7. Teste
+## 🔁 7. Testes
 
 1. Altere a mensagem no `main.py`
 2. Espere a ação do push

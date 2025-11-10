@@ -562,7 +562,7 @@ Acesse no navegador para ver:
    - A nova mensagem aparecerá em `http://localhost:30080/`:
 
      
-<img width="728" height="515" alt="image" src="https://github.com/user-attachments/assets/734f26fa-8da9-41fd-bdac-5d0dbac14603" />
+<img width="1111" height="554" alt="image" src="https://github.com/user-attachments/assets/9914831d-ea81-4817-84f7-fa7140d4aba3" />
 
 
 
@@ -572,13 +572,12 @@ Acesse no navegador para ver:
 
 
 
-<img width="782" height="526" alt="image" src="https://github.com/user-attachments/assets/f242e417-e5d6-428c-923c-cdbc3bdd71d0" />
+<img width="1033" height="570" alt="image" src="https://github.com/user-attachments/assets/6c7d658b-1883-46b3-8c1f-23495dded014" />
 
 
 5. Verifique também os pods com `kubectl get pods` para ver se tudo está running:
    
 <img width="722" height="246" alt="image" src="https://github.com/user-attachments/assets/7e823250-7a65-4376-9561-64b8bdf4b0da" />
 
-ㅤ
 Obs: Você pode conseguir informações úteis sobre o funcionamento verificando os logs com `kubectl logs -l app=hello-app`
 

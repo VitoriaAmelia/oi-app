@@ -557,7 +557,7 @@ Acesse no navegador para ver:
 
    - A nova mensagem aparecerá em `http://localhost:30080/` e `http://localhost:30080/hello/seunome`
 
-<img width="972" height="605" alt="image" src="https://github.com/user-attachments/assets/18b5550c-1244-41a9-a2b2-2fd6cbb719c2" />
+<img width="920" height="580" alt="image" src="https://github.com/user-attachments/assets/ebfb248b-1c14-4e13-8586-176cb7fd8a88" />
 
 <img width="955" height="589" alt="image" src="https://github.com/user-attachments/assets/52051414-1c10-4189-a715-1742ba75aee5" />
 

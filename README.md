@@ -344,7 +344,7 @@ spec:
     spec:
       containers:
         - name: hello-app    # Nome do container
-          image: amevis/hello-app:sha-a37bf22ac19838460b5756eb455c024b48714da5  # Imagem Docker usada
+          image: amevis/hello-app:latest # Imagem Docker usada (será substiruida por uma nova)
           ports:
             - containerPort: 80  # Porta exposta pelo container
 ```
@@ -657,14 +657,14 @@ Acesse no navegador para ver:
 1. Altere a mensagem no `main.py`
 2. Espere a ação do push
 3. Verifique:
-   - ✅ A imagem foi atualizada no **Docker Hub**
+   - A imagem foi atualizada no **Docker Hub**
   
      
 <img width="1073" height="553" alt="image" src="https://github.com/user-attachments/assets/5ef90ead-c726-482e-bdac-01541cb36cdc" />
 
 
     
-   - ✅ O arquivo `deployment.yaml` foi atualizado com a nova tag da imagem
+   - O arquivo `deployment.yaml` foi atualizado com a nova tag da imagem
 
      
 <img width="1026" height="596" alt="image" src="https://github.com/user-attachments/assets/2c78707b-db92-4f55-8f60-622fa4212b90" />

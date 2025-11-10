@@ -4,7 +4,7 @@ Projeto realizado no contexto do Programa de Bolsas. Este repositório tem rela�
 
 ## 📋 Objetivos
 
-O objetivo desse projeto é utomatizar o ciclo completo de desenvolvimento, build, deploy e execução de uma aplicação FastAPI simples, usando GitHub Actions para CI/CD, Docker Hub como registry, e ArgoCD para entrega contínua em Kubernetes local com Rancher Desktop. 
+O objetivo desse projeto é automatizar o ciclo completo de desenvolvimento, build, deploy e execução de uma aplicação FastAPI simples, usando GitHub Actions para CI/CD, Docker Hub como registry, e ArgoCD para entrega contínua em Kubernetes local com Rancher Desktop. 
 
 ## 📋 Pré-requisitos
 
@@ -319,7 +319,7 @@ Saída esperada:
 <img width="288" height="74" alt="image" src="https://github.com/user-attachments/assets/5da02613-cdaf-4ceb-8d9f-4fcdc3d1234a" />
 
 
-### `deployment.yaml`
+### `deployment.yaml` com comentários:
 ```yaml
 apiVersion: apps/v1   
 kind: Deployment      # Criando deployment
@@ -349,7 +349,7 @@ spec:
             - containerPort: 80  # Porta exposta pelo container
 ```
 
-### `service.yaml`
+### `service.yaml` com comentários:
 ```yaml
 apiVersion: v1
 kind: Service           # Cria o Service para expor a aplicação
